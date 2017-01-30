@@ -37,7 +37,7 @@
       <!-- <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
        <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li> -->
        <li ng-repeat='item in Buy.buyItems'>
-         Buy {{ item.quantity }} of {{ item.name }}
+         Buy {{ item.quantity }} {{ item.name }}
          <button class="btn btn-default" ng-click="Buy.transferItem($index);"><span class="glyphicon glyphicon-ok"></span> Bought</button>
        </li>
      </ul>
@@ -48,7 +48,7 @@
     <div class="col-md-6" ng-controller="AlreadyBoughtController as Bought">
      <h2>Already Bought:</h2>
      <ul>
-       <li ng-repeat='item in Bought.boughtItems'>Bought {{ item.quantity }} of {{ item.name }}</li>
+       <li ng-repeat='item in Bought.boughtItems'>Bought {{ item.quantity }} {{ item.name }}</li>
      </ul>
      <div class="emptyMessage" ng-if='(Bought.boughtItems == 0)'>Nothing bought yet.</div>
     </div>
