@@ -1,0 +1,22 @@
+<div class="container">
+  <span
+    ng-show="myinfoCtrl.showSign">
+    Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
+  </span>
+
+<div ng-hide="myinfoCtrl.showSign">
+  <span>Welcome {{ myinfoCtrl.user.firstname }} {{ myinfoCtrl.user.lastname }}</<span>
+  <br>
+  <span>Email: {{ myinfoCtrl.user.email }} </<span>
+  <br>
+  <span>{{ myinfoCtrl.user.phone }}</span>
+  <br>
+  <span>You picked </span>
+  <br>
+  <div>
+  {{ myinfoCtrl.user.favName}} : {{ myinfoCtrl.user.favDesc }}
+  </div>
+
+  <img class="img-responsive" ng-src="{{ myinfoCtrl.imageUrl }}" height="250" height="250">
+</div>
+</div>
