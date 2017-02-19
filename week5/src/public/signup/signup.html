@@ -13,10 +13,10 @@
 
   <span
     ng-if="(signupform.firstname.$error.minlength || signupform.firstname.$error.required) && signupform.firstname.$touched">
-    First must be at least 2 characters long
+    First Name must be at least 2 characters long
   </span>
   <span ng-if="signupform.firstname.$error.maxlength && signupform.firstname.$touched">
-    Username must not be longer than 15 characters
+    First Name must not be longer than 15 characters
   </span>
   <br>
   <br>
@@ -62,7 +62,7 @@
     placeholder="Menu Number"
     ng-model="signupCtrl.user.fav"
     class="form-control">
-    <span ng-if="signupCtrl.menuerr">No such menu item exists!</span>
+    <span ng-if="signupCtrl.menuerr">No such menu number exists.</span>
 
 
     <span ng-if="signupCtrl.menusuccess">Your information has been saved.</span>
