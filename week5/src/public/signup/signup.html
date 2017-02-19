@@ -10,7 +10,6 @@
       minlength="2"
       ng-maxlength="15"
       class="form-control">
-      {{ signupCtrl.user.firstname }}
 
   <span
     ng-if="(signupform.firstname.$error.minlength || signupform.firstname.$error.required) && signupform.firstname.$touched">
@@ -29,7 +28,6 @@
     minlength="2"
     ng-maxlength="15"
     class="form-control">
-    {{ signupCtrl.user.lastname }}
 
   <span
     ng-if="(signupform.lastname.$error.minlength || signupform.lastname.$error.required) && signupform.lastname.$touched">
